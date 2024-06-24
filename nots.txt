@@ -1,0 +1,34 @@
+       how to creat server
+
+
+ step1:1 
+ instal  package.js 
+ cammond  :  npm init -y
+
+
+
+ step:2
+ instal packages 
+ cammonds : npm i express nodemon 
+
+ step:3 creat file (app.js) file name as your wish
+
+ step4 : in the app.js file write the code
+
+
+ 1 const impot express=require("express");
+ 2 const app=express();
+ 3 const port : 5000  // (----port number is as yous wish----)
+
+
+    ----get methode---
+    app.get('/mani',(req,res)=>{
+        res.send("hello manikanta")
+
+    });
+
+
+
+ app.listen(port()=>{
+    console.log("the server is running at port :5000")
+ });
